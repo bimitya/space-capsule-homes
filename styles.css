@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 48px 0;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.site-header,
+.site-footer {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #333;
+  background: #e0e0e0;
+  color: #111;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.button.secondary {
+  background: #fff;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: #111;
+}
+
+.subheading {
+  margin-bottom: 24px;
+  max-width: 640px;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.badge {
+  padding: 6px 12px;
+  border: 1px dashed #666;
+  background: #eaeaea;
+  font-size: 14px;
+}
+
+.cta-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.media-placeholder {
+  display: grid;
+  gap: 8px;
+  max-width: 400px;
+  border: 1px solid #bbb;
+  padding: 16px;
+  background: #ddd;
+}
+
+.media-box {
+  height: 180px;
+  border: 2px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.media-label {
+  text-align: center;
+  font-size: 14px;
+}
+
+.quiz-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.wire-button {
+  padding: 16px 24px;
+  border: 2px solid #333;
+  background: #f0f0f0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quiz-flow {
+  margin-bottom: 24px;
+}
+
+.progress-bar {
+  border: 1px solid #999;
+  height: 28px;
+  margin-bottom: 16px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.progress-fill {
+  width: 40%;
+  height: 100%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.question-box {
+  border: 1px solid #aaa;
+  background: #e7e7e7;
+  padding: 16px;
+  text-align: center;
+  min-height: 80px;
+}
+
+.quiz-result {
+  border: 1px solid #bbb;
+  padding: 24px;
+  background: #f9f9f9;
+  display: grid;
+  gap: 16px;
+}
+
+.result-summary {
+  border: 1px dashed #999;
+  padding: 16px;
+  background: #fff;
+}
+
+.lead-form {
+  border: 1px dashed #ccc;
+  padding: 16px;
+  background: #fff;
+}
+
+.form-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  padding: 8px;
+  border: 1px solid #888;
+  background: #f7f7f7;
+}
+
+.form-row textarea {
+  min-height: 80px;
+}
+
+.form-row.consent {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.tab-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  padding: 12px 16px;
+  border: 2px dashed #555;
+  background: #eee;
+}
+
+.tab-content {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.tab-card {
+  border: 1px solid #aaa;
+  background: #fff;
+  padding: 16px;
+}
+
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.metric-box {
+  border: 1px dashed #777;
+  padding: 16px;
+  text-align: center;
+  background: #eee;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  gap: 8px;
+}
+
+.checklist li {
+  border: 1px dashed #666;
+  padding: 12px;
+  background: #fff;
+}
+
+.map-note {
+  display: grid;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.map-placeholder {
+  height: 200px;
+  border: 2px dashed #aaa;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.note {
+  font-size: 14px;
+  color: #444;
+}
+
+.card-grid.three {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card-grid.four {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #aaa;
+  background: #fff;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.dimensions-box,
+.plan-box {
+  border: 1px dashed #999;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
+
+.configurator {
+  display: grid;
+  gap: 24px;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.config-options {
+  border: 1px solid #bbb;
+  background: #fff;
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.option-group {
+  border: 1px dashed #aaa;
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.config-summary {
+  border: 1px solid #bbb;
+  background: #fdfdfd;
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+  position: sticky;
+  top: 96px;
+  height: fit-content;
+}
+
+.summary-box {
+  border: 1px dashed #999;
+  padding: 12px;
+  background: #fff;
+}
+
+.config-cta {
+  display: grid;
+  gap: 8px;
+}
+
+.investor-row {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px dashed #888;
+  background: #f0f0f0;
+}
+
+.showroom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.map-placeholder {
+  min-height: 240px;
+}
+
+.showroom-form {
+  border: 1px solid #bbb;
+  padding: 16px;
+  background: #fff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.gallery-item {
+  border: 2px dashed #aaa;
+  background: #e5e5e5;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.faq-list details {
+  border: 1px solid #bbb;
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.faq-list summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.final-cta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.cta-block {
+  border: 1px solid #999;
+  background: #fff;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  text-align: center;
+}
+
+.contact-summary {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.contact-form {
+  border: 1px solid #bbb;
+  background: #fff;
+  padding: 16px;
+}
+
+.cms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.cms-card {
+  border: 1px dashed #999;
+  background: #fff;
+  padding: 16px;
+}
+
+.site-footer {
+  border-top: 1px solid #ccc;
+  padding: 32px 0;
+  margin-top: 48px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-note {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.contact-card {
+  border: 1px dashed #aaa;
+  background: #fff;
+  padding: 16px;
+}
